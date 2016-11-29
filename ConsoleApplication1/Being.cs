@@ -10,12 +10,8 @@ namespace HumanRobotPanda
     {
         public void Eat(string food)
         {
-            Console.WriteLine($"Yum, I just ate a delicious {food}");
+            Console.WriteLine($"I just ate a delicious {food}");
         }
 
-        public Being()
-        {
-            
-        }
     }
 }

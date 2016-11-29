@@ -8,8 +8,8 @@ namespace HumanRobotPanda
 {
     public class Panda : Being
     {
+
+    }     
        
-           
-       
-    }
+    
 }

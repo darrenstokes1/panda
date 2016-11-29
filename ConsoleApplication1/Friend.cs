@@ -11,21 +11,22 @@ namespace HumanRobotPanda
         // Common Traits of Friends
         public string  Name { get; set; }
         public string Greeting { get; set; }
-        public bool IsAsleep { get; set; } = true;
+        
 
         public Friend()
         {
             this.Name = Name;
             this.Greeting = Greeting;
         }
-       public string DisplayName()
-        {
-            return Name;
-        }
-       public string DisplayGreeting()
+        public string DisplayGreeting()
         {
             return Greeting;
         }
+        public string DisplayName()
+        {
+            return Name;
+        }
+      
       
 
 

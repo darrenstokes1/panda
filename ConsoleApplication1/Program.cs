@@ -10,39 +10,49 @@ namespace HumanRobotPanda
     {
         static void Main(string[] args)
         {
-            var Ola = new Friend();
-            Ola.Greeting = "Ola!";
-            Console.WriteLine(Ola.DisplayGreeting());
-            Console.ReadLine();
+            /*var Ola = new Friend();
+            Ola.Greeting = "Ola, ";
+            Console.Write(Ola.DisplayGreeting());*/
+
 
             var Human = new Human();
+            Human.Greeting = "Hello, ";
             Human.Name = "My name is Bro and ";
-            Human.Eat("Ribs");
-            Console.WriteLine(Human.DisplayName());
-            Console.ReadLine();
+            Console.WriteLine(Human.DisplayGreeting());
+            Console.Write(Human.DisplayName());
+            Human.Eat("Riblet!");
+            Console.WriteLine();
+            
 
             var Panda = new Panda();
+            Panda.Greeting = "Yo yo, ";
             Panda.Name = "My name is Poo Bear and ";
-            Panda.Eat("Banana");
-            Console.WriteLine(Panda.DisplayName());
-            Console.ReadLine();
-
-
-            var Robot = new Robot();
-            Robot.Name = "My name is Vinnie";
-            Console.WriteLine(Robot.DisplayName());
-            Console.ReadLine();
-
-            var Dave = new Friend();
-            Dave.Name = "My name is Davie ";
-            Console.WriteLine(Dave.DisplayName());
-            Console.ReadLine(); 
-
-           
-
+            Console.WriteLine(Panda.DisplayGreeting());
+            Console.Write(Panda.DisplayName());
+            Panda.Eat("Banana!");
+            Console.WriteLine();
             
-        }
 
-       
+
+            var Robot = new Robot(); // Robot isnt acting right
+            Robot.Greeting = "Hello earthlings, ";
+            Robot.Name = "My name is Vinnie and ";
+            Console.WriteLine(Robot.DisplayGreeting());
+            Console.Write(Robot.DisplayName());
+            Robot.IsTerminator(); // Vinnie is a terminator
+            Console.WriteLine();
+            Robot.Startup(); // and he is awake
+            Console.WriteLine();
+            Robot.ShutDown(); // Now he is shutting down
+
+            Console.ReadLine();
+
+
+
+
+
+        }
+        
+
     }
 }
